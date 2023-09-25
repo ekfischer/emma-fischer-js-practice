@@ -1,0 +1,101 @@
+<script>
+
+// This is a comment
+let somecode = 'this code';
+
+/*
+FYI: this is a comment, too
+but it can be on more then one line
+*/
+
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript practice</title>
+</head>
+<body>
+  <h1>Your JavaScript page</h1>
+  <p>Use your Inspector to view your console.</p>
+  <script>
+    // Your code will go here
+  console.log("thing")
+    let x = 5;
+    console.log(x);
+  console.log("Let's do math:");
+  let y = 3;
+  console.log(y);
+  let z = x * y;
+  console.log(z);
+
+  // Math on my own
+
+    // Addition
+      let num1 = 10;
+      let num2 = 5;
+      let sum = num1 + num2
+      console.log("Addition:", sum)
+
+    // Subtraction
+      let num3 = 20;
+      let num4 = 7;
+      let difference = num3 - num4;
+      console.log("Subtraction:", difference);
+
+    // Division
+      let num5 = 15;
+      let num6 = 3;
+      let quotient = num5 / num6;
+      console.log("Division:", quotient);
+
+  console.log("Working with strings:");
+  let firstName = 'Emma';
+  let middleName = 'Kate';
+  let lastName = 'Fischer';
+  let name = firstName + " " + middleName + " " + lastName;
+console.log(name)
+
+// Strings on my own
+
+// Create a variable called 'name'
+var name = "Emma";
+
+// Create a variable called 'greeting' and concatenate strings
+var greeting = "My name is " + name;
+
+// Log the 'greeting' variable to the console
+console.log(greeting);
+
+console.log("Using functions:");
+
+// function to make square numbers
+function makeSquare(theNumb) {
+}
+
+function makeSquare(theNumb) {
+  let squared = theNumb * theNumb;
+  return squared;
+}
+
+let try01 = makeSquare(3);
+  console.log(try01);
+
+  // Functions on my own
+function makeName(firstname, middleName, lastName) {
+  // Combine the three arguments with spaces in between
+  const fullName = firstName + ' ' + middleName + ' ' + lastName;
+  return fullName;
+}
+
+// Example usage:
+const firstName = "Emma";
+const middleName = "Kate";
+const fullName = makeName(firstName, middleName, lastName)
+
+console.log( Emma Kate Fischer: ${fullName});
+  </script>
+</body>
+</html>
