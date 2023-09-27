@@ -36,8 +36,8 @@ but it can be on more then one line
     // Addition
       let num1 = 10;
       let num2 = 5;
-      let sum = num1 + num2
-      console.log("Addition:", sum)
+      let myTotal = num1 + num2
+      console.log("Addition:", myTotal)
 
     // Subtraction
       let num3 = 20;
@@ -51,23 +51,23 @@ but it can be on more then one line
       let quotient = num5 / num6;
       console.log("Division:", quotient);
 
-  console.log("Working with strings:");
-  let firstName = 'Emma';
-  let middleName = 'Kate';
-  let lastName = 'Fischer';
-  let name = firstName + " " + middleName + " " + lastName;
-console.log(name)
+console.log("Working with strings:");
+let firstName = 'Emma';
+let middleName = 'Kate';
+let lastName = 'Fischer';
+let name = firstName + " " + middleName + " " + lastName;
+console.log(name);
 
 // Strings on my own
 
 // Create a variable called 'name'
-var name = "Emma";
+var name1 = "Emma";
 
 // Create a variable called 'greeting' and concatenate strings
 var greeting = "My name is " + name;
 
 // Log the 'greeting' variable to the console
-console.log(greeting);
+console.log("greeting:");
 
 console.log("Using functions:");
 
@@ -81,7 +81,7 @@ function makeSquare(theNumb) {
 }
 
 let try01 = makeSquare(3);
-  console.log(try01);
+  console.log("try01");
 
   // Functions on my own
 function makeName(firstname, middleName, lastName) {
@@ -91,11 +91,68 @@ function makeName(firstname, middleName, lastName) {
 }
 
 // Example usage:
-const firstName = "Emma";
-const middleName = "Kate";
-const fullName = makeName(firstName, middleName, lastName)
+let firstName1 = "Emma";
+let middleName1 = "Kate";
+let lastName1 = "Fischer";
+let fullName1 = makeName(firstName1, middleName1, lastName1)
 
-console.log( Emma Kate Fischer: ${fullName});
+console.log("Emma Kate Fischer:");
+
+// Example usage:
+let fullName2 = makeName("Emma", "K", "Fischer"); // Middle name is an initial
+let fullName3 = makeName("Emma", "Kate", "Fischer"); // Middle name is not an initial
+
+console.log(fullName1); // Output: "Emma K. Fischer"
+console.log(fullName2); // Output: "Emma Kate Fischer"
+
+// Just a log to show in our Console
+console.log("Making a better name function:");
+
+// A better name function to fix middle initials
+function makeBetterName(firstName, middleName, lastName) {
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("John", "F", "Kennedy"));
+
+// Make a name with middle initial
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    return true;
+  }
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
+
+console.log("scoreCompare function");
+  function scoreCompare(home, away) {
+    if (home > away) {
+      return "Home team wins!";
+    } else {
+      return "Away team wins :("
+    }
+  }
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+
+  var person = {
+  firstName: "Christian",
+  lastName: "McDonald",
+  age: "53"
+};
+
+var person = {
+  firstName: "Christian",
+  lastName: "McDonald",
+  age: "56",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+
   </script>
 </body>
 </html>
